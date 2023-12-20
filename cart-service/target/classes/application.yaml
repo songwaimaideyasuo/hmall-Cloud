@@ -42,3 +42,8 @@ knife4j:
         api-rule: package
         api-rule-resources:
           - com.hmall.cart.controller
+
+# 开启连接池
+feign:
+  okhttp:
+    enabled: true

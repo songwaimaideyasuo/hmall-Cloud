@@ -5,7 +5,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 
-@EnableFeignClients //开启OpenFeign
+@EnableFeignClients(basePackages = "com.hmall.api.client") //开启OpenFeign
 @MapperScan("com.hmall.cart.mapper")
 @SpringBootApplication
 public class CartApplication {
