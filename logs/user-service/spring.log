@@ -1,0 +1,503 @@
+17:22:55:341  INFO 11120 --- [main] com.hmall.user.UserApplication           : Starting UserApplication using Java 11 on DESKTOP-QSHNEPP with PID 11120 (F:\BaiduNetdiskDownload\Cloud_learn\微服务1\hmall\user-service\target\classes started by 86173 in F:\BaiduNetdiskDownload\Cloud_learn\微服务1\hmall)
+17:22:55:343 DEBUG 11120 --- [main] com.hmall.user.UserApplication           : Running with Spring Boot v2.7.12, Spring v5.3.27
+17:22:55:343  INFO 11120 --- [main] com.hmall.user.UserApplication           : The following 1 profile is active: "local"
+17:22:56:445  INFO 11120 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=d0d26de1-97cd-37ba-a219-158641a67251
+17:22:56:771  INFO 11120 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+17:22:56:783  INFO 11120 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+17:22:56:784  INFO 11120 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+17:22:56:910  INFO 11120 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+17:22:56:910  INFO 11120 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1523 ms
+17:22:59:709  INFO 11120 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+17:23:00:485  INFO 11120 --- [main] com.alibaba.nacos.common.remote.client   : [RpcClientFactory] create a new rpc client of d38965ad-459c-4102-aad1-75cf8488512a
+17:23:00:541  INFO 11120 --- [main] org.reflections.Reflections              : Reflections took 35 ms to scan 1 urls, producing 3 keys and 6 values 
+17:23:00:564  INFO 11120 --- [main] org.reflections.Reflections              : Reflections took 9 ms to scan 1 urls, producing 4 keys and 9 values 
+17:23:00:573  INFO 11120 --- [main] org.reflections.Reflections              : Reflections took 6 ms to scan 1 urls, producing 3 keys and 10 values 
+17:23:00:576  WARN 11120 --- [main] org.reflections.Reflections              : given scan urls are empty. set urls in the configuration
+17:23:00:583  INFO 11120 --- [main] org.reflections.Reflections              : Reflections took 7 ms to scan 1 urls, producing 1 keys and 5 values 
+17:23:00:592  INFO 11120 --- [main] org.reflections.Reflections              : Reflections took 7 ms to scan 1 urls, producing 1 keys and 7 values 
+17:23:00:601  INFO 11120 --- [main] org.reflections.Reflections              : Reflections took 6 ms to scan 1 urls, producing 2 keys and 8 values 
+17:23:00:603  WARN 11120 --- [main] org.reflections.Reflections              : given scan urls are empty. set urls in the configuration
+17:23:00:604  INFO 11120 --- [main] com.alibaba.nacos.common.remote.client   : [d38965ad-459c-4102-aad1-75cf8488512a] RpcClient init label, labels = {module=naming, source=sdk}
+17:23:00:606  INFO 11120 --- [main] com.alibaba.nacos.common.remote.client   : [d38965ad-459c-4102-aad1-75cf8488512a] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+17:23:00:606  INFO 11120 --- [main] com.alibaba.nacos.common.remote.client   : [d38965ad-459c-4102-aad1-75cf8488512a] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+17:23:00:606  INFO 11120 --- [main] com.alibaba.nacos.common.remote.client   : [d38965ad-459c-4102-aad1-75cf8488512a] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+17:23:00:607  INFO 11120 --- [main] com.alibaba.nacos.common.remote.client   : [d38965ad-459c-4102-aad1-75cf8488512a] Try to connect to server on start up, server: {serverIp = '192.168.61.130', server main port = 8848}
+17:23:02:732  INFO 11120 --- [main] com.alibaba.nacos.common.remote.client   : [d38965ad-459c-4102-aad1-75cf8488512a] Success to connect to server [192.168.61.130:8848] on start up, connectionId = 1702158509473_192.168.61.1_14180
+17:23:02:732  INFO 11120 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [d38965ad-459c-4102-aad1-75cf8488512a] Notify connected event to listeners.
+17:23:02:734  INFO 11120 --- [main] com.alibaba.nacos.common.remote.client   : [d38965ad-459c-4102-aad1-75cf8488512a] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+17:23:02:735  INFO 11120 --- [main] com.alibaba.nacos.common.remote.client   : [d38965ad-459c-4102-aad1-75cf8488512a] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$954/0x000000080071a840
+17:23:02:783  INFO 11120 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path ''
+17:23:02:793  INFO 11120 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP user-service 192.168.61.1:8088 register finished
+17:23:03:309  INFO 11120 --- [nacos-grpc-client-executor-9] com.alibaba.nacos.common.remote.client   : [d38965ad-459c-4102-aad1-75cf8488512a] Receive server push request, request = NotifySubscriberRequest, requestId = 22
+17:23:03:314  INFO 11120 --- [nacos-grpc-client-executor-9] com.alibaba.nacos.common.remote.client   : [d38965ad-459c-4102-aad1-75cf8488512a] Ack server push request, request = NotifySubscriberRequest, requestId = 22
+17:23:03:520  INFO 11120 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+17:23:03:523  INFO 11120 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+17:23:03:541  INFO 11120 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+17:23:03:618  INFO 11120 --- [main] com.hmall.user.UserApplication           : Started UserApplication in 9.427 seconds (JVM running for 11.106)
+17:23:08:085  INFO 11120 --- [http-nio-8088-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+17:23:08:086  INFO 11120 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+17:23:08:089  INFO 11120 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+17:23:50:527  INFO 11120 --- [http-nio-8088-exec-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+17:23:50:781  INFO 11120 --- [http-nio-8088-exec-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+17:23:50:787 DEBUG 11120 --- [http-nio-8088-exec-6] c.h.user.mapper.UserMapper.selectOne     : ==>  Preparing: SELECT id,username,password,phone,create_time,update_time,status,balance FROM user WHERE (username = ?)
+17:23:50:804 DEBUG 11120 --- [http-nio-8088-exec-6] c.h.user.mapper.UserMapper.selectOne     : ==> Parameters: jack(String)
+17:23:50:825 DEBUG 11120 --- [http-nio-8088-exec-6] c.h.user.mapper.UserMapper.selectOne     : <==      Total: 1
+17:57:57:499  WARN 11120 --- [Thread-7] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+17:57:57:499  WARN 11120 --- [Thread-4] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+17:57:57:499  WARN 11120 --- [Thread-4] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+17:57:57:500  WARN 11120 --- [Thread-7] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+17:57:57:879  INFO 11120 --- [SpringApplicationShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+17:57:57:882  INFO 11120 --- [SpringApplicationShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+17:57:58:189  INFO 11120 --- [SpringApplicationShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown rpc client, set status to shutdown
+17:57:58:190  INFO 11120 --- [SpringApplicationShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown client event executor java.util.concurrent.ScheduledThreadPoolExecutor@52aec0a7[Running, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 0]
+17:57:58:190  INFO 11120 --- [SpringApplicationShutdownHook] com.alibaba.nacos.common.remote.client   : Close current connection 1702158509473_192.168.61.1_14180
+17:57:58:191  INFO 11120 --- [nacos-grpc-client-executor-432] c.a.n.c.remote.client.grpc.GrpcClient    : [1702158509473_192.168.61.1_14180]Ignore complete event,isRunning:false,isAbandon=false
+17:57:58:197  INFO 11120 --- [SpringApplicationShutdownHook] c.a.n.c.remote.client.grpc.GrpcClient    : Shutdown grpc executor java.util.concurrent.ThreadPoolExecutor@4c65a04f[Running, pool size = 5, active threads = 0, queued tasks = 0, completed tasks = 433]
+17:57:58:201  INFO 11120 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+17:57:58:212  INFO 11120 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+17:58:07:278  INFO 24780 --- [main] com.hmall.trade.UserApplication          : Starting UserApplication using Java 11 on DESKTOP-QSHNEPP with PID 24780 (F:\BaiduNetdiskDownload\Cloud_learn\微服务1\hmall\user-service\target\classes started by 86173 in F:\BaiduNetdiskDownload\Cloud_learn\微服务1\hmall)
+17:58:07:279 DEBUG 24780 --- [main] com.hmall.trade.UserApplication          : Running with Spring Boot v2.7.12, Spring v5.3.27
+17:58:07:280  INFO 24780 --- [main] com.hmall.trade.UserApplication          : The following 1 profile is active: "local"
+17:58:08:119  WARN 24780 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.hmall.user.mapper]' package. Please check your configuration.
+17:58:08:180  INFO 24780 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=481d18a6-972e-378f-bf56-cae61e463740
+17:58:08:499  INFO 24780 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+17:58:08:508  INFO 24780 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+17:58:08:509  INFO 24780 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+17:58:08:640  INFO 24780 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+17:58:08:641  INFO 24780 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1318 ms
+17:58:08:698  WARN 24780 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'addressController' defined in file [F:\BaiduNetdiskDownload\Cloud_learn\微服务1\hmall\user-service\target\classes\com\hmall\trade\controller\AddressController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'addressServiceImpl': Unsatisfied dependency expressed through field 'baseMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.hmall.trade.mapper.AddressMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+17:58:08:700  INFO 24780 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+17:58:08:715  INFO 24780 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+17:58:08:742 ERROR 24780 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'addressController' defined in file [F:\BaiduNetdiskDownload\Cloud_learn\微服务1\hmall\user-service\target\classes\com\hmall\trade\controller\AddressController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'addressServiceImpl': Unsatisfied dependency expressed through field 'baseMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.hmall.trade.mapper.AddressMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:920) ~[spring-context-5.3.27.jar:5.3.27]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.27.jar:5.3.27]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.12.jar:2.7.12]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731) ~[spring-boot-2.7.12.jar:2.7.12]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.12.jar:2.7.12]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.7.12.jar:2.7.12]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) ~[spring-boot-2.7.12.jar:2.7.12]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) ~[spring-boot-2.7.12.jar:2.7.12]
+	at com.hmall.trade.UserApplication.main(UserApplication.java:14) ~[classes/:na]
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'addressServiceImpl': Unsatisfied dependency expressed through field 'baseMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.hmall.trade.mapper.AddressMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:660) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-5.3.27.jar:5.3.27]
+	... 19 common frames omitted
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.hmall.trade.mapper.AddressMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1801) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1357) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:657) ~[spring-beans-5.3.27.jar:5.3.27]
+	... 34 common frames omitted
+
+18:03:21:657  INFO 2296 --- [main] com.hmall.trade.UserApplication          : Starting UserApplication using Java 11 on DESKTOP-QSHNEPP with PID 2296 (F:\BaiduNetdiskDownload\Cloud_learn\微服务1\hmall\user-service\target\classes started by 86173 in F:\BaiduNetdiskDownload\Cloud_learn\微服务1\hmall)
+18:03:21:659 DEBUG 2296 --- [main] com.hmall.trade.UserApplication          : Running with Spring Boot v2.7.12, Spring v5.3.27
+18:03:21:659  INFO 2296 --- [main] com.hmall.trade.UserApplication          : The following 1 profile is active: "local"
+18:03:22:471  WARN 2296 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.hmall.user.mapper]' package. Please check your configuration.
+18:03:22:530  INFO 2296 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=481d18a6-972e-378f-bf56-cae61e463740
+18:03:22:805  INFO 2296 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+18:03:22:812  INFO 2296 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+18:03:22:813  INFO 2296 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+18:03:22:941  INFO 2296 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+18:03:22:942  INFO 2296 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1235 ms
+18:03:22:997  WARN 2296 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'addressController' defined in file [F:\BaiduNetdiskDownload\Cloud_learn\微服务1\hmall\user-service\target\classes\com\hmall\trade\controller\AddressController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'addressServiceImpl': Unsatisfied dependency expressed through field 'baseMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.hmall.trade.mapper.AddressMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+18:03:22:999  INFO 2296 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+18:03:23:013  INFO 2296 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+18:03:23:035 ERROR 2296 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'addressController' defined in file [F:\BaiduNetdiskDownload\Cloud_learn\微服务1\hmall\user-service\target\classes\com\hmall\trade\controller\AddressController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'addressServiceImpl': Unsatisfied dependency expressed through field 'baseMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.hmall.trade.mapper.AddressMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:920) ~[spring-context-5.3.27.jar:5.3.27]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.27.jar:5.3.27]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.12.jar:2.7.12]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731) ~[spring-boot-2.7.12.jar:2.7.12]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.12.jar:2.7.12]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.7.12.jar:2.7.12]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) ~[spring-boot-2.7.12.jar:2.7.12]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) ~[spring-boot-2.7.12.jar:2.7.12]
+	at com.hmall.trade.UserApplication.main(UserApplication.java:14) ~[classes/:na]
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'addressServiceImpl': Unsatisfied dependency expressed through field 'baseMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.hmall.trade.mapper.AddressMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:660) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-5.3.27.jar:5.3.27]
+	... 19 common frames omitted
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.hmall.trade.mapper.AddressMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1801) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1357) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:657) ~[spring-beans-5.3.27.jar:5.3.27]
+	... 34 common frames omitted
+
+18:05:32:068  INFO 17704 --- [main] com.hmall.trade.UserApplication          : Starting UserApplication using Java 11 on DESKTOP-QSHNEPP with PID 17704 (F:\BaiduNetdiskDownload\Cloud_learn\微服务1\hmall\user-service\target\classes started by 86173 in F:\BaiduNetdiskDownload\Cloud_learn\微服务1\hmall)
+18:05:32:070 DEBUG 17704 --- [main] com.hmall.trade.UserApplication          : Running with Spring Boot v2.7.12, Spring v5.3.27
+18:05:32:070  INFO 17704 --- [main] com.hmall.trade.UserApplication          : The following 1 profile is active: "local"
+18:05:32:924  WARN 17704 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.hmall.user.mapper]' package. Please check your configuration.
+18:05:32:994  INFO 17704 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=481d18a6-972e-378f-bf56-cae61e463740
+18:05:33:264  INFO 17704 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+18:05:33:271  INFO 17704 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+18:05:33:271  INFO 17704 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+18:05:33:393  INFO 17704 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+18:05:33:394  INFO 17704 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1278 ms
+18:05:33:445  WARN 17704 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'addressController' defined in file [F:\BaiduNetdiskDownload\Cloud_learn\微服务1\hmall\user-service\target\classes\com\hmall\trade\controller\AddressController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'addressServiceImpl': Unsatisfied dependency expressed through field 'baseMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.hmall.trade.mapper.AddressMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+18:05:33:447  INFO 17704 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+18:05:33:460  INFO 17704 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+18:05:33:482 ERROR 17704 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'addressController' defined in file [F:\BaiduNetdiskDownload\Cloud_learn\微服务1\hmall\user-service\target\classes\com\hmall\trade\controller\AddressController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'addressServiceImpl': Unsatisfied dependency expressed through field 'baseMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.hmall.trade.mapper.AddressMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:920) ~[spring-context-5.3.27.jar:5.3.27]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.27.jar:5.3.27]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.12.jar:2.7.12]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731) ~[spring-boot-2.7.12.jar:2.7.12]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.12.jar:2.7.12]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.7.12.jar:2.7.12]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) ~[spring-boot-2.7.12.jar:2.7.12]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) ~[spring-boot-2.7.12.jar:2.7.12]
+	at com.hmall.trade.UserApplication.main(UserApplication.java:14) ~[classes/:na]
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'addressServiceImpl': Unsatisfied dependency expressed through field 'baseMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.hmall.trade.mapper.AddressMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:660) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-5.3.27.jar:5.3.27]
+	... 19 common frames omitted
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.hmall.trade.mapper.AddressMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1801) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1357) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:657) ~[spring-beans-5.3.27.jar:5.3.27]
+	... 34 common frames omitted
+
+18:05:56:503  INFO 20888 --- [main] com.hmall.trade.UserApplication          : Starting UserApplication using Java 11 on DESKTOP-QSHNEPP with PID 20888 (F:\BaiduNetdiskDownload\Cloud_learn\微服务1\hmall\user-service\target\classes started by 86173 in F:\BaiduNetdiskDownload\Cloud_learn\微服务1\hmall)
+18:05:56:505 DEBUG 20888 --- [main] com.hmall.trade.UserApplication          : Running with Spring Boot v2.7.12, Spring v5.3.27
+18:05:56:505  INFO 20888 --- [main] com.hmall.trade.UserApplication          : The following 1 profile is active: "local"
+18:05:57:274  WARN 20888 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.hmall.user.mapper]' package. Please check your configuration.
+18:05:57:344  INFO 20888 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=481d18a6-972e-378f-bf56-cae61e463740
+18:05:57:610  INFO 20888 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8089 (http)
+18:05:57:618  INFO 20888 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+18:05:57:618  INFO 20888 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+18:05:57:738  INFO 20888 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+18:05:57:738  INFO 20888 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1198 ms
+18:05:57:789  WARN 20888 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'addressController' defined in file [F:\BaiduNetdiskDownload\Cloud_learn\微服务1\hmall\user-service\target\classes\com\hmall\trade\controller\AddressController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'addressServiceImpl': Unsatisfied dependency expressed through field 'baseMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.hmall.trade.mapper.AddressMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+18:05:57:791  INFO 20888 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+18:05:57:803  INFO 20888 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+18:05:57:824 ERROR 20888 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'addressController' defined in file [F:\BaiduNetdiskDownload\Cloud_learn\微服务1\hmall\user-service\target\classes\com\hmall\trade\controller\AddressController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'addressServiceImpl': Unsatisfied dependency expressed through field 'baseMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.hmall.trade.mapper.AddressMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:920) ~[spring-context-5.3.27.jar:5.3.27]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.27.jar:5.3.27]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.12.jar:2.7.12]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731) ~[spring-boot-2.7.12.jar:2.7.12]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.12.jar:2.7.12]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.7.12.jar:2.7.12]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) ~[spring-boot-2.7.12.jar:2.7.12]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) ~[spring-boot-2.7.12.jar:2.7.12]
+	at com.hmall.trade.UserApplication.main(UserApplication.java:14) ~[classes/:na]
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'addressServiceImpl': Unsatisfied dependency expressed through field 'baseMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.hmall.trade.mapper.AddressMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:660) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-5.3.27.jar:5.3.27]
+	... 19 common frames omitted
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.hmall.trade.mapper.AddressMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1801) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1357) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:657) ~[spring-beans-5.3.27.jar:5.3.27]
+	... 34 common frames omitted
+
+18:10:09:316  INFO 3596 --- [main] com.hmall.trade.UserApplication          : Starting UserApplication using Java 11 on DESKTOP-QSHNEPP with PID 3596 (F:\BaiduNetdiskDownload\Cloud_learn\微服务1\hmall\user-service\target\classes started by 86173 in F:\BaiduNetdiskDownload\Cloud_learn\微服务1\hmall)
+18:10:09:317 DEBUG 3596 --- [main] com.hmall.trade.UserApplication          : Running with Spring Boot v2.7.12, Spring v5.3.27
+18:10:09:318  INFO 3596 --- [main] com.hmall.trade.UserApplication          : The following 1 profile is active: "local"
+18:10:10:104  WARN 3596 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.hmall.user.mapper]' package. Please check your configuration.
+18:10:10:180  INFO 3596 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=e0ffdb83-badf-322f-be92-b98c4a73cc16
+18:10:10:452  INFO 3596 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+18:10:10:459  INFO 3596 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+18:10:10:459  INFO 3596 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+18:10:10:588  INFO 3596 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+18:10:10:588  INFO 3596 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1229 ms
+18:10:10:639  WARN 3596 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'addressController' defined in file [F:\BaiduNetdiskDownload\Cloud_learn\微服务1\hmall\user-service\target\classes\com\hmall\trade\controller\AddressController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'addressServiceImpl': Unsatisfied dependency expressed through field 'baseMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.hmall.trade.mapper.AddressMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+18:10:10:642  INFO 3596 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+18:10:10:657  INFO 3596 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+18:10:10:682 ERROR 3596 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'addressController' defined in file [F:\BaiduNetdiskDownload\Cloud_learn\微服务1\hmall\user-service\target\classes\com\hmall\trade\controller\AddressController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'addressServiceImpl': Unsatisfied dependency expressed through field 'baseMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.hmall.trade.mapper.AddressMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:920) ~[spring-context-5.3.27.jar:5.3.27]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.27.jar:5.3.27]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.12.jar:2.7.12]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731) ~[spring-boot-2.7.12.jar:2.7.12]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.12.jar:2.7.12]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.7.12.jar:2.7.12]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) ~[spring-boot-2.7.12.jar:2.7.12]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) ~[spring-boot-2.7.12.jar:2.7.12]
+	at com.hmall.trade.UserApplication.main(UserApplication.java:14) ~[classes/:na]
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'addressServiceImpl': Unsatisfied dependency expressed through field 'baseMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.hmall.trade.mapper.AddressMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:660) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-5.3.27.jar:5.3.27]
+	... 19 common frames omitted
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.hmall.trade.mapper.AddressMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1801) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1357) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:657) ~[spring-beans-5.3.27.jar:5.3.27]
+	... 34 common frames omitted
+
+18:13:46:675  INFO 10560 --- [main] com.hmall.user.UserApplication           : Starting UserApplication using Java 11 on DESKTOP-QSHNEPP with PID 10560 (F:\BaiduNetdiskDownload\Cloud_learn\微服务1\hmall\user-service\target\classes started by 86173 in F:\BaiduNetdiskDownload\Cloud_learn\微服务1\hmall)
+18:13:46:677 DEBUG 10560 --- [main] com.hmall.user.UserApplication           : Running with Spring Boot v2.7.12, Spring v5.3.27
+18:13:46:677  INFO 10560 --- [main] com.hmall.user.UserApplication           : The following 1 profile is active: "local"
+18:13:47:621  INFO 10560 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=4f688ae3-354a-30c4-9f3b-c903949e1322
+18:13:47:913  INFO 10560 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+18:13:47:920  INFO 10560 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+18:13:47:920  INFO 10560 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+18:13:48:050  INFO 10560 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+18:13:48:051  INFO 10560 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1340 ms
+18:13:50:862  INFO 10560 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+18:13:51:632  INFO 10560 --- [main] com.alibaba.nacos.common.remote.client   : [RpcClientFactory] create a new rpc client of 2243b72d-9c4e-46b1-a286-ef15ebf636ac
+18:13:51:680  INFO 10560 --- [main] org.reflections.Reflections              : Reflections took 33 ms to scan 1 urls, producing 3 keys and 6 values 
+18:13:51:704  INFO 10560 --- [main] org.reflections.Reflections              : Reflections took 11 ms to scan 1 urls, producing 4 keys and 9 values 
+18:13:51:716  INFO 10560 --- [main] org.reflections.Reflections              : Reflections took 9 ms to scan 1 urls, producing 3 keys and 10 values 
+18:13:51:719  WARN 10560 --- [main] org.reflections.Reflections              : given scan urls are empty. set urls in the configuration
+18:13:51:728  INFO 10560 --- [main] org.reflections.Reflections              : Reflections took 9 ms to scan 1 urls, producing 1 keys and 5 values 
+18:13:51:738  INFO 10560 --- [main] org.reflections.Reflections              : Reflections took 8 ms to scan 1 urls, producing 1 keys and 7 values 
+18:13:51:749  INFO 10560 --- [main] org.reflections.Reflections              : Reflections took 9 ms to scan 1 urls, producing 2 keys and 8 values 
+18:13:51:752  WARN 10560 --- [main] org.reflections.Reflections              : given scan urls are empty. set urls in the configuration
+18:13:51:752  INFO 10560 --- [main] com.alibaba.nacos.common.remote.client   : [2243b72d-9c4e-46b1-a286-ef15ebf636ac] RpcClient init label, labels = {module=naming, source=sdk}
+18:13:51:754  INFO 10560 --- [main] com.alibaba.nacos.common.remote.client   : [2243b72d-9c4e-46b1-a286-ef15ebf636ac] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+18:13:51:754  INFO 10560 --- [main] com.alibaba.nacos.common.remote.client   : [2243b72d-9c4e-46b1-a286-ef15ebf636ac] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+18:13:51:755  INFO 10560 --- [main] com.alibaba.nacos.common.remote.client   : [2243b72d-9c4e-46b1-a286-ef15ebf636ac] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+18:13:51:756  INFO 10560 --- [main] com.alibaba.nacos.common.remote.client   : [2243b72d-9c4e-46b1-a286-ef15ebf636ac] Try to connect to server on start up, server: {serverIp = '192.168.61.130', server main port = 8848}
+18:13:53:597  INFO 10560 --- [main] com.alibaba.nacos.common.remote.client   : [2243b72d-9c4e-46b1-a286-ef15ebf636ac] Success to connect to server [192.168.61.130:8848] on start up, connectionId = 1702161814750_192.168.61.1_2839
+18:13:53:597  INFO 10560 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [2243b72d-9c4e-46b1-a286-ef15ebf636ac] Notify connected event to listeners.
+18:13:53:598  INFO 10560 --- [main] com.alibaba.nacos.common.remote.client   : [2243b72d-9c4e-46b1-a286-ef15ebf636ac] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+18:13:53:599  INFO 10560 --- [main] com.alibaba.nacos.common.remote.client   : [2243b72d-9c4e-46b1-a286-ef15ebf636ac] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$954/0x0000000800732040
+18:13:53:641  INFO 10560 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path ''
+18:13:53:650  INFO 10560 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP user-service 192.168.61.1:8088 register finished
+18:13:54:096  INFO 10560 --- [nacos-grpc-client-executor-9] com.alibaba.nacos.common.remote.client   : [2243b72d-9c4e-46b1-a286-ef15ebf636ac] Receive server push request, request = NotifySubscriberRequest, requestId = 26
+18:13:54:100  INFO 10560 --- [nacos-grpc-client-executor-9] com.alibaba.nacos.common.remote.client   : [2243b72d-9c4e-46b1-a286-ef15ebf636ac] Ack server push request, request = NotifySubscriberRequest, requestId = 26
+18:13:54:241  INFO 10560 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+18:13:54:245  INFO 10560 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+18:13:54:273  INFO 10560 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+18:13:54:369  INFO 10560 --- [main] com.hmall.user.UserApplication           : Started UserApplication in 8.698 seconds (JVM running for 10.04)
+18:14:01:541  INFO 10560 --- [http-nio-8088-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+18:14:01:542  INFO 10560 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+18:14:01:543  INFO 10560 --- [http-nio-8088-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+18:14:06:858  INFO 10560 --- [http-nio-8088-exec-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+18:14:07:166  INFO 10560 --- [http-nio-8088-exec-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+18:14:07:174 DEBUG 10560 --- [http-nio-8088-exec-6] c.h.user.mapper.UserMapper.selectOne     : ==>  Preparing: SELECT id,username,password,phone,create_time,update_time,status,balance FROM user WHERE (username = ?)
+18:14:07:197 DEBUG 10560 --- [http-nio-8088-exec-6] c.h.user.mapper.UserMapper.selectOne     : ==> Parameters: jack(String)
+18:14:07:218 DEBUG 10560 --- [http-nio-8088-exec-6] c.h.user.mapper.UserMapper.selectOne     : <==      Total: 1
+22:43:39:235  INFO 10560 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [2243b72d-9c4e-46b1-a286-ef15ebf636ac] Server healthy check fail, currentConnection = 1702161814750_192.168.61.1_2839
+22:43:39:238  INFO 10560 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [2243b72d-9c4e-46b1-a286-ef15ebf636ac] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+22:43:40:367  INFO 10560 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [2243b72d-9c4e-46b1-a286-ef15ebf636ac] Success to connect a server [192.168.61.130:8848], connectionId = 1702179351045_192.168.61.1_5759
+22:43:40:368  INFO 10560 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [2243b72d-9c4e-46b1-a286-ef15ebf636ac] Abandon prev connection, server is 192.168.61.130:8848, connectionId is 1702161814750_192.168.61.1_2839
+22:43:40:369  INFO 10560 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : Close current connection 1702161814750_192.168.61.1_2839
+22:43:40:374  INFO 10560 --- [nacos-grpc-client-executor-3262] c.a.n.c.remote.client.grpc.GrpcClient    : [1702161814750_192.168.61.1_2839]Ignore complete event,isRunning:false,isAbandon=true
+22:43:40:386  INFO 10560 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [2243b72d-9c4e-46b1-a286-ef15ebf636ac] Notify disconnected event to listeners
+22:43:40:390  INFO 10560 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [2243b72d-9c4e-46b1-a286-ef15ebf636ac] Notify connected event to listeners.
+22:43:41:676  INFO 10560 --- [nacos-grpc-client-executor-3265] com.alibaba.nacos.common.remote.client   : [2243b72d-9c4e-46b1-a286-ef15ebf636ac] Receive server push request, request = NotifySubscriberRequest, requestId = 29
+22:43:41:678  INFO 10560 --- [nacos-grpc-client-executor-3265] com.alibaba.nacos.common.remote.client   : [2243b72d-9c4e-46b1-a286-ef15ebf636ac] Ack server push request, request = NotifySubscriberRequest, requestId = 29
+23:02:14:012  INFO 10560 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [2243b72d-9c4e-46b1-a286-ef15ebf636ac] Server healthy check fail, currentConnection = 1702179351045_192.168.61.1_5759
+23:02:14:012  INFO 10560 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [2243b72d-9c4e-46b1-a286-ef15ebf636ac] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+23:02:17:029 ERROR 10560 --- [com.alibaba.nacos.client.remote.worker] c.a.n.c.remote.client.grpc.GrpcClient    : Server check fail, please check server 192.168.61.130 ,port 9848 is available , error ={}
+
+java.util.concurrent.TimeoutException: Waited 3000 milliseconds (plus 547400 nanoseconds delay) for com.alibaba.nacos.shaded.io.grpc.stub.ClientCalls$GrpcFuture@10159cee[status=PENDING, info=[GrpcFuture{clientCall={delegate={delegate=ClientCallImpl{method=MethodDescriptor{fullMethodName=Request/request, type=UNARY, idempotent=false, safe=false, sampledToLocalTracing=true, requestMarshaller=com.alibaba.nacos.shaded.io.grpc.protobuf.lite.ProtoLiteUtils$MessageMarshaller@60cd8193, responseMarshaller=com.alibaba.nacos.shaded.io.grpc.protobuf.lite.ProtoLiteUtils$MessageMarshaller@194a846, schemaDescriptor=com.alibaba.nacos.api.grpc.auto.RequestGrpc$RequestMethodDescriptorSupplier@1647a0a}}}}}]]
+	at com.alibaba.nacos.shaded.com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:508) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.common.remote.client.grpc.GrpcClient.serverCheck(GrpcClient.java:148) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.common.remote.client.grpc.GrpcClient.connectToServer(GrpcClient.java:264) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.common.remote.client.RpcClient.reconnect(RpcClient.java:522) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.common.remote.client.RpcClient.lambda$start$2(RpcClient.java:370) ~[nacos-client-2.0.4.jar:na]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+23:02:20:141 ERROR 10560 --- [com.alibaba.nacos.client.remote.worker] c.a.n.c.remote.client.grpc.GrpcClient    : Server check fail, please check server 192.168.61.130 ,port 9848 is available , error ={}
+
+java.util.concurrent.TimeoutException: Waited 3000 milliseconds (plus 1 milliseconds, 138800 nanoseconds delay) for com.alibaba.nacos.shaded.io.grpc.stub.ClientCalls$GrpcFuture@5133c8f8[status=PENDING, info=[GrpcFuture{clientCall={delegate={delegate=ClientCallImpl{method=MethodDescriptor{fullMethodName=Request/request, type=UNARY, idempotent=false, safe=false, sampledToLocalTracing=true, requestMarshaller=com.alibaba.nacos.shaded.io.grpc.protobuf.lite.ProtoLiteUtils$MessageMarshaller@60cd8193, responseMarshaller=com.alibaba.nacos.shaded.io.grpc.protobuf.lite.ProtoLiteUtils$MessageMarshaller@194a846, schemaDescriptor=com.alibaba.nacos.api.grpc.auto.RequestGrpc$RequestMethodDescriptorSupplier@1647a0a}}}}}]]
+	at com.alibaba.nacos.shaded.com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:508) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.common.remote.client.grpc.GrpcClient.serverCheck(GrpcClient.java:148) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.common.remote.client.grpc.GrpcClient.connectToServer(GrpcClient.java:264) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.common.remote.client.RpcClient.reconnect(RpcClient.java:522) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.common.remote.client.RpcClient.lambda$start$2(RpcClient.java:370) ~[nacos-client-2.0.4.jar:na]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+23:02:20:143  INFO 10560 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [2243b72d-9c4e-46b1-a286-ef15ebf636ac] Fail to connect server, after trying 1 times, last try server is {serverIp = '192.168.61.130', server main port = 8848}, error = unknown
+23:02:23:344 ERROR 10560 --- [com.alibaba.nacos.client.remote.worker] c.a.n.c.remote.client.grpc.GrpcClient    : Server check fail, please check server 192.168.61.130 ,port 9848 is available , error ={}
+
+java.util.concurrent.TimeoutException: Waited 3000 milliseconds (plus 66000 nanoseconds delay) for com.alibaba.nacos.shaded.io.grpc.stub.ClientCalls$GrpcFuture@58289b0a[status=PENDING, info=[GrpcFuture{clientCall={delegate={delegate=ClientCallImpl{method=MethodDescriptor{fullMethodName=Request/request, type=UNARY, idempotent=false, safe=false, sampledToLocalTracing=true, requestMarshaller=com.alibaba.nacos.shaded.io.grpc.protobuf.lite.ProtoLiteUtils$MessageMarshaller@60cd8193, responseMarshaller=com.alibaba.nacos.shaded.io.grpc.protobuf.lite.ProtoLiteUtils$MessageMarshaller@194a846, schemaDescriptor=com.alibaba.nacos.api.grpc.auto.RequestGrpc$RequestMethodDescriptorSupplier@1647a0a}}}}}]]
+	at com.alibaba.nacos.shaded.com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:508) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.common.remote.client.grpc.GrpcClient.serverCheck(GrpcClient.java:148) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.common.remote.client.grpc.GrpcClient.connectToServer(GrpcClient.java:264) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.common.remote.client.RpcClient.reconnect(RpcClient.java:522) ~[nacos-client-2.0.4.jar:na]
+	at com.alibaba.nacos.common.remote.client.RpcClient.lambda$start$2(RpcClient.java:370) ~[nacos-client-2.0.4.jar:na]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+23:02:23:345  INFO 10560 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [2243b72d-9c4e-46b1-a286-ef15ebf636ac] Fail to connect server, after trying 2 times, last try server is {serverIp = '192.168.61.130', server main port = 8848}, error = unknown
+23:02:23:766  INFO 10560 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [2243b72d-9c4e-46b1-a286-ef15ebf636ac] Success to connect a server [192.168.61.130:8848], connectionId = 1702180568098_192.168.61.1_11900
+23:02:23:766  INFO 10560 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [2243b72d-9c4e-46b1-a286-ef15ebf636ac] Abandon prev connection, server is 192.168.61.130:8848, connectionId is 1702179351045_192.168.61.1_5759
+23:02:23:766  INFO 10560 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : Close current connection 1702179351045_192.168.61.1_5759
+23:02:23:767  INFO 10560 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [2243b72d-9c4e-46b1-a286-ef15ebf636ac] Notify disconnected event to listeners
+23:02:23:767  INFO 10560 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [2243b72d-9c4e-46b1-a286-ef15ebf636ac] Notify connected event to listeners.
+23:02:23:768  WARN 10560 --- [nacos-grpc-client-executor-3492] c.a.n.c.remote.client.grpc.GrpcClient    : [1702179351045_192.168.61.1_5759]Ignore error event,isRunning:true,isAbandon=true
+23:02:24:310  INFO 10560 --- [nacos-grpc-client-executor-3495] com.alibaba.nacos.common.remote.client   : [2243b72d-9c4e-46b1-a286-ef15ebf636ac] Receive server push request, request = NotifySubscriberRequest, requestId = 36
+23:02:24:311  INFO 10560 --- [nacos-grpc-client-executor-3495] com.alibaba.nacos.common.remote.client   : [2243b72d-9c4e-46b1-a286-ef15ebf636ac] Ack server push request, request = NotifySubscriberRequest, requestId = 36
+23:03:26:813  INFO 10560 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [2243b72d-9c4e-46b1-a286-ef15ebf636ac] Server healthy check fail, currentConnection = 1702180568098_192.168.61.1_11900
+23:03:26:813  INFO 10560 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [2243b72d-9c4e-46b1-a286-ef15ebf636ac] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+23:03:26:933  INFO 10560 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [2243b72d-9c4e-46b1-a286-ef15ebf636ac] Success to connect a server [192.168.61.130:8848], connectionId = 1702180636531_192.168.61.1_9547
+23:03:26:934  INFO 10560 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [2243b72d-9c4e-46b1-a286-ef15ebf636ac] Abandon prev connection, server is 192.168.61.130:8848, connectionId is 1702180568098_192.168.61.1_11900
+23:03:26:934  INFO 10560 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : Close current connection 1702180568098_192.168.61.1_11900
+23:03:26:935  INFO 10560 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [2243b72d-9c4e-46b1-a286-ef15ebf636ac] Notify disconnected event to listeners
+23:03:26:936  INFO 10560 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [2243b72d-9c4e-46b1-a286-ef15ebf636ac] Notify connected event to listeners.
+23:03:26:936  WARN 10560 --- [nacos-grpc-client-executor-3510] c.a.n.c.remote.client.grpc.GrpcClient    : [1702180568098_192.168.61.1_11900]Ignore error event,isRunning:true,isAbandon=true
+23:03:27:474  INFO 10560 --- [nacos-grpc-client-executor-3513] com.alibaba.nacos.common.remote.client   : [2243b72d-9c4e-46b1-a286-ef15ebf636ac] Receive server push request, request = NotifySubscriberRequest, requestId = 41
+23:03:27:474  INFO 10560 --- [nacos-grpc-client-executor-3513] com.alibaba.nacos.common.remote.client   : [2243b72d-9c4e-46b1-a286-ef15ebf636ac] Ack server push request, request = NotifySubscriberRequest, requestId = 41
+23:04:29:980  INFO 10560 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [2243b72d-9c4e-46b1-a286-ef15ebf636ac] Server healthy check fail, currentConnection = 1702180636531_192.168.61.1_9547
+23:04:29:980  INFO 10560 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [2243b72d-9c4e-46b1-a286-ef15ebf636ac] Try to reconnect to a new server, server is  not appointed, will choose a random server.
+23:04:32:219  INFO 10560 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [2243b72d-9c4e-46b1-a286-ef15ebf636ac] Success to connect a server [192.168.61.130:8848], connectionId = 1702180707259_192.168.61.1_2295
+23:04:32:219  INFO 10560 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [2243b72d-9c4e-46b1-a286-ef15ebf636ac] Abandon prev connection, server is 192.168.61.130:8848, connectionId is 1702180636531_192.168.61.1_9547
+23:04:32:219  INFO 10560 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : Close current connection 1702180636531_192.168.61.1_9547
+23:04:32:219  INFO 10560 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [2243b72d-9c4e-46b1-a286-ef15ebf636ac] Notify disconnected event to listeners
+23:04:32:220  INFO 10560 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [2243b72d-9c4e-46b1-a286-ef15ebf636ac] Notify connected event to listeners.
+23:04:32:221  WARN 10560 --- [nacos-grpc-client-executor-3527] c.a.n.c.remote.client.grpc.GrpcClient    : [1702180636531_192.168.61.1_9547]Ignore error event,isRunning:true,isAbandon=true
+23:04:33:640  INFO 10560 --- [nacos-grpc-client-executor-3532] com.alibaba.nacos.common.remote.client   : [2243b72d-9c4e-46b1-a286-ef15ebf636ac] Receive server push request, request = NotifySubscriberRequest, requestId = 44
+23:04:33:640  INFO 10560 --- [nacos-grpc-client-executor-3532] com.alibaba.nacos.common.remote.client   : [2243b72d-9c4e-46b1-a286-ef15ebf636ac] Ack server push request, request = NotifySubscriberRequest, requestId = 44

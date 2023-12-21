@@ -8,6 +8,7 @@
         <option value="$PROJECT_DIR$/item-service/pom.xml" />
         <option value="$PROJECT_DIR$/hm-service/pom.xml" />
         <option value="$PROJECT_DIR$/hm-common/pom.xml" />
+        <option value="$PROJECT_DIR$/trade-service/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
