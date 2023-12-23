@@ -1,8 +1,8 @@
-package com.hmall.user.service;
+package com.hmall.trade.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.hmall.user.domain.dto.OrderFormDTO;
-import com.hmall.user.domain.po.Order;
+import com.hmall.trade.domain.dto.OrderFormDTO;
+import com.hmall.trade.domain.po.Order;
 
 
 /**

@@ -1,4 +1,4 @@
-package com.hmall.user.service.impl;
+package com.hmall.trade.service.impl;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.hmall.api.client.CartClient;
@@ -9,12 +9,12 @@ import com.hmall.common.exception.BadRequestException;
 import com.hmall.common.utils.UserContext;
 
 
-import com.hmall.user.domain.dto.OrderFormDTO;
-import com.hmall.user.domain.po.Order;
-import com.hmall.user.domain.po.OrderDetail;
-import com.hmall.user.mapper.OrderMapper;
-import com.hmall.user.service.IOrderDetailService;
-import com.hmall.user.service.IOrderService;
+import com.hmall.trade.domain.dto.OrderFormDTO;
+import com.hmall.trade.domain.po.Order;
+import com.hmall.trade.domain.po.OrderDetail;
+import com.hmall.trade.mapper.OrderMapper;
+import com.hmall.trade.service.IOrderDetailService;
+import com.hmall.trade.service.IOrderService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

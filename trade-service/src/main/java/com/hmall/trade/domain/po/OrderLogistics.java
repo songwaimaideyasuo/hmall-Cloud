@@ -1,4 +1,4 @@
-package com.hmall.user.domain.po;
+package com.hmall.trade.domain.po;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
@@ -12,7 +12,7 @@ import java.time.LocalDateTime;
 
 /**
  * <p>
- * 订单详情表
+ * 
  * </p>
  *
  * @author 虎哥
@@ -21,51 +21,56 @@ import java.time.LocalDateTime;
 @Data
 @EqualsAndHashCode(callSuper = false)
 @Accessors(chain = true)
-@TableName("order_detail")
-public class OrderDetail implements Serializable {
+@TableName("order_logistics")
+public class OrderLogistics implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
     /**
-     * 订单详情id 
+     * 订单id，与订单表一对一
      */
-    @TableId(value = "id", type = IdType.AUTO)
-    private Long id;
-
-    /**
-     * 订单id
-     */
+    @TableId(value = "order_id", type = IdType.INPUT)
     private Long orderId;
 
     /**
-     * sku商品id
+     * 物流单号
      */
-    private Long itemId;
+    private String logisticsNumber;
 
     /**
-     * 购买数量
+     * 物流公司名称
      */
-    private Integer num;
+    private String logisticsCompany;
 
     /**
-     * 商品标题
+     * 收件人
      */
-    private String name;
+    private String contact;
 
     /**
-     * 商品动态属性键值集
+     * 收件人手机号码
      */
-    private String spec;
+    private String mobile;
 
     /**
-     * 价格,单位：分
+     * 省
      */
-    private Integer price;
+    private String province;
 
     /**
-     * 商品图片
+     * 市
      */
-    private String image;
+    private String city;
+
+    /**
+     * 区
+     */
+    private String town;
+
+    /**
+     * 街道
+     */
+    private String street;
 
     /**
      * 创建时间

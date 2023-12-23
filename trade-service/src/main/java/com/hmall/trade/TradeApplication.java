@@ -1,4 +1,4 @@
-package com.hmall.user;
+package com.hmall.trade;
 
 import com.hmall.api.config.DefaultFeignConfig;
 import org.mybatis.spring.annotation.MapperScan;
